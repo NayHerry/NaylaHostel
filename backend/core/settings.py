@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-hmom09^xbt6fe+$e-r$zbux$ndco-_c9krndu^9o#t=jvdx$by
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['34.58.39.118','nayla.vims.space']
+ALLOWED_HOSTS = ['34.136.134.61','nayla.vims.space']
 
 
 # Application definition
