@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-hmom09^xbt6fe+$e-r$zbux$ndco-_c9krndu^9o#t=jvdx$by
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['34.136.134.61','nayla.vims.space']
+ALLOWED_HOSTS = ['34.136.134.61','naylahostel.onrender.com']
 
 
 # Application definition
@@ -134,9 +134,9 @@ SIMPLE_JWT = {
 CORS_ALLOW_ALL_ORIGINS = True
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://nayla.vims.space',
-    'https://nayla.vims.space',
-    'https://www.nayla.vims.space'
+    'http://naylahostel.onrender.com',
+    'https://naylahostel.onrender.com',
+    'https://www.naylahostel.onrender.com'
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
