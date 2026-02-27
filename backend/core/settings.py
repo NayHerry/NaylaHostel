@@ -134,7 +134,6 @@ SIMPLE_JWT = {
 CORS_ALLOW_ALL_ORIGINS = True
 
 CSRF_TRUSTED_ORIGINS = [
-    'nayla.vims.space',
     'http://nayla.vims.space',
     'https://nayla.vims.space',
     'https://www.nayla.vims.space'
