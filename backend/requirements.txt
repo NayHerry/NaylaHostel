@@ -5,3 +5,7 @@ djangorestframework
 djangorestframework_simplejwt
 PyJWT
 sqlparse
+gunicorn
+dj-database-url
+psycopg2-binary
+whitenoise
