@@ -1,7 +1,12 @@
 import axios from 'axios';
 
+const configuredBaseUrl = import.meta.env.VITE_API_BASE_URL;
+const API_BASE_URL = configuredBaseUrl
+    ? configuredBaseUrl.replace(/\/+$/, '')
+    : '/api';
+
 const api = axios.create({
-    baseURL: 'http://127.0.0.1:8000/api',
+    baseURL: API_BASE_URL,
 });
 
 api.interceptors.request.use(
@@ -24,7 +29,7 @@ api.interceptors.response.use(
             const refreshToken = localStorage.getItem('refresh_token');
             if (refreshToken) {
                 try {
-                    const res = await axios.post('http://127.0.0.1:8000/api/auth/login/refresh/', {
+                    const res = await axios.post(`${API_BASE_URL}/auth/login/refresh/`, {
                         refresh: refreshToken,
                     });
                     localStorage.setItem('access_token', res.data.access);
