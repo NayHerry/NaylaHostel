@@ -1,9 +1,10 @@
 import axios from 'axios';
 
 const configuredBaseUrl = import.meta.env.VITE_API_BASE_URL;
+const defaultProductionBaseUrl = 'https://naylahostel.onrender.com/api';
 const API_BASE_URL = configuredBaseUrl
     ? configuredBaseUrl.replace(/\/+$/, '')
-    : '/api';
+    : (import.meta.env.DEV ? '/api' : defaultProductionBaseUrl);
 
 const api = axios.create({
     baseURL: API_BASE_URL,
