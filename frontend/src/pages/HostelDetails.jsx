@@ -185,6 +185,9 @@ const HostelDetails = () => {
                                     onClick={() => navigate('/my-booking')}
                                 >
                                     View My Booking
+                               
+                               
+                               
                                 </button>
                             </div>
                         ) : (
